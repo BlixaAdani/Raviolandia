@@ -1,0 +1,19 @@
+{
+  "name": "raviolandia",
+  "version": "1.0.0",
+  "description": "Página web para fábrica de pastas raviolandia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlixaAdani/Raviolandia.git"
+  },
+  "author": "Naim Adani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlixaAdani/Raviolandia/issues"
+  },
+  "homepage": "https://github.com/BlixaAdani/Raviolandia#readme"
+}
