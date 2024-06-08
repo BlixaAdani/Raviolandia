@@ -7,3 +7,9 @@ $(document).ready(function() {
       $(this).find('.dropdown-menu').removeClass('show');
     });
 });
+
+$('.carousel').carousel({
+  interval: 2000
+});
+
+window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>');

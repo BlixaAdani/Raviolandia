@@ -1,13 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header{
     height: 30px;
 .navbar{
-    background-color: #ffe817;
+    background-color: $pantallaprin;
 h3{
     font-style: italic;
     font-weight: lighter;
@@ -20,22 +14,35 @@ height: 50px;
 margin-top: 9px;
 align-self: left;
 }
+#dLabel{
+    align-self: right;
+    height: 60px;
+    width: 120px;
+    justify-content: center;
+    border-color: aliceblue;
+    color: white;
+    background-color: $pantallaboton;
+    border-radius: 10px;
+}
 }
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown{
+    margin-left: 50rem;
+    margin-right: 50rem;
+&:hover{
+    display: block;
+.dropdown-menu{
     display: block;
 }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
-
-.dropdown {
-    margin-left: 40rem;
-    margin-right: 40rem;
 }
 
 .name {
     text-align: center;
-    color: green;}
+    color: rgb(227, 252, 0);}
+
+    .search-container {
+        position: absolute;
+        top: 10px;
+        right: 10px;}

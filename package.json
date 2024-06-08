@@ -1,6 +1,6 @@
 {
   "name": "raviolandia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Página web para fábrica de pastas raviolandia",
   "main": "index.js",
   "scripts": {
