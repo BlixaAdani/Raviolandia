@@ -13,24 +13,27 @@ header .navbar {
 header .navbar h3 {
   font-style: italic;
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 3.125rem;
   display: inline;
 }
 header .navbar .logo {
-  width: 80px;
-  height: 50px;
-  margin-top: 9px;
+  width: 5rem;
+  height: 3.125rem;
+  margin-top: 0.5625rem;
   align-self: left;
 }
 header .navbar #dLabel {
   align-self: right;
-  height: 60px;
-  width: 120px;
+  height: 3.75rem;
+  width: 7.5rem;
   justify-content: center;
-  border-color: aliceblue;
-  color: white;
+  border-color: rgba(255, 123, 0, 0.87);
+  color: rgba(255, 123, 0, 0.87);
   background-color: rgba(240, 219, 136, 0.87);
-  border-radius: 10px;
+  border-radius: 0.625rem;
+}
+header .navbar #dLabel.dropdown-button {
+  position: absolute;
 }
 
 .dropdown {
@@ -50,13 +53,17 @@ header .navbar #dLabel {
 }
 
 .search-container {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: 100%;
+  top: 0.625rem;
+  right: 0.625rem;
 }
 
-.d-block {
-  margin-top: 50px;
+cover {
+  position: absolute;
+}
+
+.carousel-control-next, .carousel-inner, .carousel-item {
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

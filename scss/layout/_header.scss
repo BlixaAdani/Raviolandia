@@ -5,24 +5,27 @@ header{
 h3{
     font-style: italic;
     font-weight: lighter;
-    font-size: 50px;
+    font-size: 3.125rem;
     display: inline;
 }
 .logo{
-width: 80px;
-height: 50px;
-margin-top: 9px;
+width: 5rem;
+height: 3.125rem;
+margin-top: .5625rem;
 align-self: left;
 }
 #dLabel{
     align-self: right;
-    height: 60px;
-    width: 120px;
+    height: 3.75rem;
+    width: 7.5rem;
     justify-content: center;
-    border-color: aliceblue;
-    color: white;
+    border-color: $pantallon;
+    color: $pantallon;
     background-color: $pantallaboton;
-    border-radius: 10px;
+    border-radius: .625rem;
+    &.dropdown-button{
+        position: absolute;
+    }
 }
 }
 }
@@ -43,6 +46,6 @@ align-self: left;
     color: rgb(227, 252, 0);}
 
     .search-container {
-        position: absolute;
-        top: 10px;
-        right: 10px;}
+        position: 100%;
+        top: .625rem;
+        right: .625rem;}
