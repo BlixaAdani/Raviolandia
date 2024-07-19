@@ -1,50 +1,49 @@
 header{
-    height: 30px;
+    height: 5.625rem;
+    background-color: $pantallaprin;
 .navbar{
     background-color: $pantallaprin;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
 h3{
+    display: inline;
     font-style: italic;
     font-weight: lighter;
-    font-size: 3.125rem;
-    display: inline;
+    font-size: 5rem;
+    align-items: center;
 }
 .logo{
-width: 5rem;
-height: 3.125rem;
-margin-top: .5625rem;
-align-self: left;
-}
-#dLabel{
-    align-self: right;
-    height: 3.75rem;
-    width: 7.5rem;
-    justify-content: center;
-    border-color: $pantallon;
-    color: $pantallon;
-    background-color: $pantallaboton;
-    border-radius: .625rem;
-    &.dropdown-button{
-        position: absolute;
-    }
-}
-}
+width: 6.25rem;
+height: auto;
 }
 .dropdown{
     margin-left: 50rem;
     margin-right: 50rem;
-&:hover{
+#dLabel{
+    align-self: right;
+    height: 3.75rem;
+    width: 7.5rem;
+    justify-content: left;
+    border-color: $pantallon;
+    color: $pantallon;
+    background-color: $pantallaboton;
+    word-wrap: break-word;
+    border-radius: .625rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+.dropdown-button,
+.form-control,
+.btn {
     display: block;
-.dropdown-menu{
-    display: block;
+    width: 100%;
+    &:hover{
+        display: block;
 }
 }
 }
-
-.name {
-    text-align: center;
-    color: rgb(227, 252, 0);}
-
-    .search-container {
-        position: 100%;
-        top: .625rem;
-        right: .625rem;}
+}
+}
