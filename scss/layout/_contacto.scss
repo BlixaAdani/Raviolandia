@@ -1,5 +1,11 @@
-body {
-  font-family: Arial, sans-serif;
+:root {
+  --primary-color: #2566aa;
+  --hover-color: #1e579d;
+  --font-family: Arial, sans-serif;
+}
+
+body#cuerpo {
+  font-family: var(--font-family);
   line-height: 1.6;
   color: #3a0000ad;
 }
@@ -7,24 +13,19 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-height: 1vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .header {
-  background-color: #2566aadc;
+  background-color: var(--primary-color);
   color: white;
-  height: 9vh;
   width: 100%;
   padding: 1em 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header__title {
-  align-self: center;
 }
 
 .header__nav-list {
@@ -87,13 +88,13 @@ body {
 }
 
 .modal-content .modal-footer .btn-primary {
-  background-color: #2566aadc;
-  border-color: #2566aadc;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .modal-content .modal-footer .btn-primary:hover {
-  background-color: #1e579d;
-  border-color: #1e579d;
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
 }
 
 /* Contact Page Specific Styles */
@@ -102,17 +103,21 @@ body {
   margin-bottom: 2em;
 }
 
-.contact-section__title {
+.contact-section__title,
+.contact-info__title {
   margin-bottom: 1em;
-  color: #2566aadc;
+  color: var(--primary-color);
 }
 
+.contact-section__label,
 .contact-info__label {
   display: block;
   margin-bottom: 0.5em;
   font-weight: bold;
 }
 
+.contact-section__input,
+.contact-section__textarea,
 .contact-info__input,
 .contact-info__textarea {
   width: 100%;
@@ -122,8 +127,9 @@ body {
   border-radius: 5px;
 }
 
+.contact-section__button,
 .contact-info__button {
-  background-color: #2566aadc;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 0.75em 1.5em;
@@ -131,10 +137,12 @@ body {
   cursor: pointer;
 }
 
+.contact-section__button:hover,
 .contact-info__button:hover {
-  background-color: #1e579d;
+  background-color: var(--hover-color);
 }
 
+.contact-section__textarea,
 .contact-info__textarea {
   resize: vertical;
 }
@@ -144,10 +152,6 @@ body {
 }
 
 /* Social Icons */
-.text-center {
-  background-color: #f8f9fa;
-}
-
 .social-icons {
   display: none;
   position: absolute;
