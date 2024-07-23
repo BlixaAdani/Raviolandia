@@ -18,6 +18,7 @@
   <meta property="og:type" content="website">
   <title>Raviolandia</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/_style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -26,20 +27,20 @@
 
 <body>
   <header class="masthead mb-auto">
-    <nav class="navbar navbar-light nav-masthead align-content-center flex-row">
+    <nav class="navbar nav-masthead align-content-center flex-row">
       <div class="cover-container d-flex h-100 mx-auto">
         <h3 class="masthead-brand align-content-left justify-content-center">RAVIOLANDIA</h3>
         <img class="logo" src="./assets/ravioli.png" alt="Image of a plate of ravioli">
         <div class="dropdown">
-          <button id="dLabel" class="dropdown-button" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Páginas</button>
+          <button id="dLabel" class="dropdown-button align-content-right" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Menú</button>
           <div class="dropdown-menu" aria-labelledby="dLabel">
             <a class="nav-link active" href="#">Principal</a>
             <a class="nav-link" href="./pages/carrito.html">Pedidos</a>
             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             <form class="d-flex">
-              <input class="form-control me-2" id="forma" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn danger-secondary btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" id="forma" type="search" placeholder="" aria-label="Search">
+              <button class="btn danger-secondary btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -77,55 +78,37 @@
     </div>
   </main>
   <footer class="text-center text-white">
-    <div class="container p-4">
+    <div class="container">
       <section class="bg-tertiary">
-        <div class="row">
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-12">
             <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="dark">
-              <img src="./assets/DSC_0519.jpg" class="w-100" />
-              <a href="./pages/carrito.html">
-                <div class="mask" style="background-color: rgba(5, 22, 59, 0.637);"></div>
-              </a>
+              <img src="./assets/DSC_0519.jpg" class="w-100"/>
             </div>
           </div>
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-12">
             <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
               <img src="./assets/DSC_0102.jpg" class="w-100" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-              </a>
-            </div>
+              </div>
           </div>
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-12">
             <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
               <img src="./assets/DSC_0077.jpg" class="w-100" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-12">
             <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
               <img src="./assets/DSC_0004.jpg" class="w-100" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-12">
             <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
               <img src="./assets/DSC_0030.jpg" class="w-100" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-              </a>
             </div>
           </div>
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div class="col-lg-2 col-md-12">
             <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
               <img src="./assets/DSC_0119.jpg" class="w-100" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-              </a>
             </div>
           </div>
         </div>
@@ -134,7 +117,7 @@
     <div class="container p-3 pb-0">
       <section class="mb-3 d-flex justify-content-center align-items-center">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1 d-flex align-items-center" role="button" href="#">
+        <a class="btn btn-outline-light btn-floating m-1 d-flex align-items-center" role="button" href="https://www.facebook.com/p/Raviolandia-Quilmes-100063698257078/">
           <i class="fab fa-facebook-f"></i>
           <img src="./assets/facebook.png" alt="Facebook" style="width: 20px; height: 20px; margin-left: 5px;">
         </a>
@@ -148,9 +131,8 @@
           <i class="fab fa-whatsapp-f"></i>
           <img src="./assets/whatsapp.png" alt="WhatsApp" style="width: 20px; height: 20px; margin-left: 5px;">
         </a>
-      </section>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(143, 38, 38, 0.2);">
+    <div class="text-center p-3">
       © 2024 Copyright:
       <a class="text-white" href="#">Raviolandia</a>
     </div>

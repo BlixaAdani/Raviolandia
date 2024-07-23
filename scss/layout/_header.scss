@@ -1,26 +1,27 @@
 header{
     height: 5.625rem;
-    background-color: $pantallaprin;
+    
 .navbar{
-    background-color: $pantallaprin;
+    color: $pantallon;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: right;
     flex-direction: column;
-h3{
+.cover-container{
+    width: 100%;
+}
+.masthead-brand{
     display: inline;
     font-style: italic;
     font-weight: lighter;
-    font-size: 5rem;
     align-items: center;
+    font-size: 2.5rem;
 }
 .logo{
 width: 6.25rem;
 height: auto;
 }
 .dropdown{
-    margin-left: 50rem;
-    margin-right: 50rem;
 #dLabel{
     align-self: right;
     height: 3.75rem;
@@ -29,11 +30,8 @@ height: auto;
     border-color: $pantallon;
     color: $pantallon;
     background-color: $pantallaboton;
-    word-wrap: break-word;
     border-radius: .625rem;
     max-width: 100%;
-    overflow-wrap: break-word;
-    white-space: normal;
 }
 .dropdown-button,
 .form-control,

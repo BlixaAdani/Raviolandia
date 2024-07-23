@@ -1,29 +1,37 @@
-.text-center{
-    background-color: $pantallazo;
-}
 
+.text-center{
+    background-color: $pantallon;
+    width: 100%;
 .container {
+  background-color: $pantallon;
+  color: $pantallon;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 1310px;
+    margin-top: 0.125rem;
+    .row{
+      background-color: $pantallon;
+    .col-lg-2{
+      background-color: $pantallon;
+    }
+    }
   }
-  
+}
+
   .social-icons {
     display: none;
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
+    background-color: $pantallon;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgb(253, 143, 0);
   }
   
   .social-icon {
     display: block;
     margin-bottom: 5px;
+
   }
   
   .social-icon img {

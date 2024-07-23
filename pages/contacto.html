@@ -3,25 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name Checker</title>
-    <link rel="stylesheet" href="../scss/style.scss">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Raviolandia - Your go-to place for delicious homemade pasta">
+    <meta name="keywords" content="Fabrica de pastas, pastas caseras, ravioles, sorrentinos, fideos amasados con amor, harina, comida casera, fabrica especializada en pastas">
+    <meta name="author" content="Naim Francisco Adani Leiva">
+    <meta name="copyright" content="Raviolandia">
+    <meta name="theme-color" content="#ffff99">
+    <meta property="og:title" content="Raviolandia - Fábrica casera de pastas">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://t4.ftcdn.net/jpg/00/72/13/91/360_F_72139134_Wa4qjPASj09fL0vsblzRDoLESF5p55bS.jpg">
+    <meta property="og:url" content="www.raviolandia.com">
+    <meta property="og:type" content="website">
+    <title>Raviolandia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <div class="container">
-        <div>
-        <h1>Enter Full Name</h1>
-        <input type="text" id="nameInput" placeholder="Enter your full name">
-        <button onclick="checkName()">Check Name</button>
-        <p id="result"></p>
-        </div>
-        <div class="numero">
-        <h1>Enter Full Name</h1>
-        <input type="number" id="ageInput" placeholder="Enter your age">
-        <button onclick="checkAge()">Check Age</button>
-        <p id="result"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+<body class="bod">
+    <header class="head">
+        <nav class="header__nav">
+            <h3 class="header__title">Raviolandia</h3>
+            <div class="dropdown">
+                <button id="dLabel" class="dropdown-button" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</button>
+                <div class="dropdown-menu" aria-labelledby="dLabel">
+                    <a class="nav-link active" href="../index.html">Principal</a>
+                    <a class="nav-link" href="../pages/carrito.html">Pedidos</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="forma" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contact-section">
+            <h2 class="contact-section__title">Contacto</h2>
+            <form class="contact-section__form" action="#" method="post">
+                <label class="contact-section__label" for="name">Nombre:</label>
+                <input class="contact-section__input" type="text" id="name" name="name" required>
+                <label class="contact-section__label" for="email">Correo Electrónico:</label>
+                <input class="contact-section__input" type="email" id="email" name="email" required>
+                <label class="contact-section__label" for="subject">Asunto:</label>
+                <input class="contact-section__input" type="text" id="subject" name="subject" required>
+                <label class="contact-section__label" for="message">Mensaje:</label>
+                <textarea class="contact-section__textarea" id="message" name="message" rows="4" required></textarea>
+                <button class="contact-section__button" type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2 class="contact-info__title">Información de Contacto</h2>
+            <p class="contact-info__text">Teléfono: 1160397216</p>
+            <p class="contact-info__text">Dirección: Andrés Baranda 1967, Quilmes</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Copyright: Raviolandia.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

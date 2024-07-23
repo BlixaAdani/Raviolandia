@@ -6,43 +6,38 @@
 
 header {
   height: 5.625rem;
-  background-color: rgb(255, 250, 160);
 }
 header .navbar {
-  background-color: rgb(255, 250, 160);
+  color: rgb(224, 137, 55);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: right;
   flex-direction: column;
 }
-header .navbar h3 {
+header .navbar .cover-container {
+  width: 100%;
+}
+header .navbar .masthead-brand {
   display: inline;
   font-style: italic;
   font-weight: lighter;
-  font-size: 5rem;
   align-items: center;
+  font-size: 2.5rem;
 }
 header .navbar .logo {
   width: 6.25rem;
   height: auto;
-}
-header .navbar .dropdown {
-  margin-left: 50rem;
-  margin-right: 50rem;
 }
 header .navbar .dropdown #dLabel {
   align-self: right;
   height: 3.75rem;
   width: 7.5rem;
   justify-content: left;
-  border-color: rgba(255, 123, 0, 0.87);
-  color: rgba(255, 123, 0, 0.87);
+  border-color: rgb(224, 137, 55);
+  color: rgb(224, 137, 55);
   background-color: rgba(240, 219, 136, 0.87);
-  word-wrap: break-word;
   border-radius: 0.625rem;
   max-width: 100%;
-  overflow-wrap: break-word;
-  white-space: normal;
 }
 header .navbar .dropdown .dropdown-button,
 header .navbar .dropdown .form-control,
@@ -56,59 +51,232 @@ header .navbar .dropdown .btn:hover {
   display: block;
 }
 
-body .container {
+.carousel-inner {
+  margin-top: 2.75rem;
+}
+
+.cuerpo {
+  background-image: url("https://thumbs.dreamstime.com/b/close-up-pasta-machine-effortlessly-extruding-fresh-noodles-factory-319545266.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.cuerpo header {
+  background-color: #1e579d;
+  height: 5.5rem;
+  width: auto;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  flex-direction: row-reverse;
 }
-body .header {
-  background-color: rgba(37, 102, 170, 0.862745098);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  height: 9vh;
-  width: 200vh;
+.cuerpo header .header__nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
 }
-body .main {
+.cuerpo header .header__nav #dLabel {
+  height: 3.75rem;
+  width: 7.5rem;
+  border-color: rgb(224, 137, 55);
+  color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(199, 35, 49, 0.486);
+  border-radius: 0.625rem;
+  align-self: right;
+}
+.cuerpo .main {
   flex: 1;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
-body .productos {
-  width: 200vh;
-  margin-top: -2rem;
-  background-color: rgba(82, 110, 204, 0.959);
+.cuerpo .main .container {
+  display: flex;
+  flex-direction: column;
 }
-body .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
+.cuerpo .main .container #product-list {
+  width: 100%;
+  height: 20%;
 }
-body #product-list .card img {
-  height: 200px;
+.cuerpo .main .container #product-list .card img {
+  height: 600px;
   object-fit: cover;
+}
+.cuerpo .main .container #product-list .card img .col {
+  height: 120px;
+}
+.cuerpo .footer {
+  background-color: rgb(90, 64, 204);
+}
+
+.bod {
+  background-color: rgba(169, 209, 192, 0.13);
+  padding: 1rem;
+  color: #000000;
+  background-image: url(/assets/DSC_0141\ \(2\)\ copia.jpg);
+}
+.bod .head {
+  background-color: rgba(172, 0, 0, 0.8078431373);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+.bod .head .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bod .head .header__nav .header__title {
+  color: #000000;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+.bod .head .header__nav .dropdown #dLabel {
+  border-color: rgb(224, 137, 55);
+  color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(94, 15, 22, 0.486);
+  border-radius: 0.625rem;
+  align-self: right;
+}
+.bod .head .header__nav .dropdown .dropdown-button {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.bod .head .header__nav .dropdown .dropdown-button:hover {
+  background-color: #1e579d;
+}
+.bod .head .dropdown-menu {
+  background-color: white;
+  border: 1px solid #000000;
+}
+.bod .head .dropdown-menu .nav-link {
+  color: #000000;
+  padding: 0.5rem 1rem;
+}
+.bod .head .dropdown-menu .nav-link:hover {
+  background-color: #000000;
+  color: white;
+}
+.bod .head .dropdown-menu .nav-link.active {
+  background-color: #1e579d;
+  color: white;
+}
+.bod .head .d-flex {
+  display: flex;
+  align-items: center;
+}
+.bod .head .d-flex .form-control {
+  margin-right: 0.5rem;
+}
+.bod .head .d-flex .btn-outline-success {
+  border-color: #000000;
+  color: #000000;
+}
+.bod .head .d-flex .btn-outline-success:hover {
+  background-color: #000000;
+  color: white;
+}
+.bod .contact-section,
+.bod .contact-info {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.bod .contact-section__title,
+.bod .contact-info__title {
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.bod .contact-section__label,
+.bod .contact-info__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+.bod .contact-section__input, .bod .contact-section__textarea,
+.bod .contact-info__input,
+.bod .contact-info__textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.bod .contact-section__button,
+.bod .contact-info__button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bod .contact-section__button:hover,
+.bod .contact-info__button:hover {
+  background-color: #1e579d;
+}
+.bod .contact-section__textarea,
+.bod .contact-info__textarea {
+  resize: vertical;
+}
+.bod .contact-info__title {
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.bod .contact-info__text {
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+.bod .footer {
+  padding: 1rem;
+  background-color: rgba(172, 0, 0, 0.8078431373);
+  text-align: center;
+  border-radius: 12px;
+}
+.bod .footer .footer__text {
+  margin: 0;
+  color: #000000;
+  border-radius: 12px;
 }
 
 .text-center {
-  background-color: rgb(206, 169, 47);
+  background-color: rgb(224, 137, 55);
+  width: 100%;
 }
-
-.container {
+.text-center .container {
+  background-color: rgb(224, 137, 55);
+  color: rgb(224, 137, 55);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 1310px;
+  margin-top: 0.125rem;
+}
+.text-center .container .row {
+  background-color: rgb(224, 137, 55);
+}
+.text-center .container .row .col-lg-2 {
+  background-color: rgb(224, 137, 55);
 }
 
 .social-icons {
   display: none;
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
+  background-color: rgb(224, 137, 55);
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgb(253, 143, 0);
 }
 
 .social-icon {
@@ -125,128 +293,142 @@ body #product-list .card img {
   position: relative;
 }
 
+body {
+  height: 320px;
+}
 @media (max-width: 320px) {
-  body {
-    width: 100%;
+  body header {
+    height: 300%;
+    background-color: rgb(255, 250, 160);
   }
-  body main {
-    width: 300%;
-  }
-  body .masthead {
-    width: 0%;
-    margin-right: 50%;
-  }
-  body .navbar {
-    width: 300%;
-  }
-  body .cover-container {
-    width: 100%;
-  }
-  body .masthead-brand {
+  body header .navbar {
+    background-color: rgb(255, 250, 160);
     display: flex;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 3px;
-    font-size: smaller;
+    flex-direction: row;
   }
-  body .logo {
-    width: 20px;
-    height: 20px;
-    margin-left: 30px;
+  body header .navbar .masthead-brand {
+    display: inline;
+    font-style: italic;
+    font-weight: lighter;
+    align-items: center left;
+    font-size: 1rem;
   }
-  body #dLabel {
+  body header .navbar .logo {
+    width: 0.25rem;
+    height: auto;
+  }
+  body header .navbar .dropdown {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 3rem;
+    height: 1rem;
+  }
+  body header .navbar .dropdown #dLabel {
+    align-self: right;
+    height: 3.75rem;
+    width: 7.5rem;
+    justify-content: left;
+    border-color: rgb(224, 137, 55);
+    color: rgb(224, 137, 55);
+    background-color: rgba(240, 219, 136, 0.87);
+    word-wrap: break-word;
+    border-radius: 0.625rem;
     max-width: 100%;
     overflow-wrap: break-word;
-    margin-right: 300px;
+    white-space: normal;
+  }
+  body header .navbar .dropdown .dropdown-button,
+  body header .navbar .dropdown .form-control,
+  body header .navbar .dropdown .btn {
+    display: block;
+    width: 100%;
+  }
+  body header .navbar .dropdown .dropdown-button:hover,
+  body header .navbar .dropdown .form-control:hover,
+  body header .navbar .dropdown .btn:hover {
+    display: block;
   }
 }
+
 @media (min-width: 375px) {
-  body .navbar {
+  .navbar {
     padding: 20px;
   }
-  body .navbar .masthead-brand {
+  .navbar .masthead-brand {
     font-size: 1.4em;
   }
-  body .navbar .logo {
+  .navbar .logo {
     width: 60px;
   }
-  body .navbar #dLabel {
+  .navbar #dLabel {
     max-width: 100%;
     overflow-wrap: break-word;
     white-space: normal;
   }
 }
 @media (min-width: 425px) {
-  body .navbar {
+  .navbar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
   }
-  body .navbar .masthead-brand {
+  .navbar .masthead-brand {
     font-size: 1.5em;
     margin-bottom: 0;
   }
-  body .navbar .logo {
+  .navbar .logo {
     width: 6rem;
     height: 3rem;
   }
-  body .navbar .dropdown-button {
+  .navbar .dropdown-button {
     width: auto;
   }
-  body .navbar .dropdown-menu {
+  .navbar .dropdown-menu {
     width: auto;
   }
-  body .navbar .form-control {
+  .navbar .form-control {
     width: auto;
     margin-bottom: 0;
   }
-  body .navbar .btn {
+  .navbar .btn {
     width: auto;
   }
-  body .navbar #dLabel {
+  .navbar #dLabel {
     max-width: 100%;
     overflow-wrap: break-word;
     white-space: normal;
   }
 }
 @media (max-width: 678px) {
-  body .container {
+  .container {
     display: flex;
     grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
     grid-template-columns: 1fr;
     grid-template-areas: "header" "banner" "left-aside" "main" "right-aside" "low-content" "footer";
   }
-}
-
-@media (max-width: 768px) {
-  .container {
-    grid-template-areas: "header" "main" "banner" "left-aside" "right-aside" "low-content" "footer";
-  }
-}
-@media (max-width: 1366px) {
   .logo {
-    margin-left: 10px;
-    height: 1rem;
-    width: 1rem;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
   }
   #dLabel {
-    margin-left: 70px;
-    margin-top: -12px;
-  }
-  .container {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .container .mb-3 {
-    flex-direction: row;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-right: 300px;
   }
 }
-@media (max-width: 768px) {
-  .main {
-    padding: 10px;
+@media (min-width: 425px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
   }
-  .card {
-    margin-bottom: 20px;
+  .navbar .masthead-brand {
+    font-size: 1;
   }
 }
 
