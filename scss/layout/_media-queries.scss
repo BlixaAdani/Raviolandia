@@ -2,9 +2,11 @@ body {
   height: 320px;
 @media (max-width: 320px) {
   header{
-    height: 300%;
+    height: 30px;
     background-color: $pantallaprin;
-    
+    .cover-container{
+      width: 320px !important;
+    }
 .navbar{
     background-color: $pantallaprin;
     display: flex;
@@ -15,12 +17,14 @@ body {
     display: inline;
     font-style: italic;
     font-weight: lighter;
-    align-items: center left;
-    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
 }
 .logo{
-width: 0.25rem;
+width: 1.75rem;
 height: auto;
+margin-left: 2rem;
 }
 .dropdown{
     margin-left: 5rem;
@@ -29,7 +33,7 @@ height: auto;
     height: 1rem;
 #dLabel{
     align-self: right;
-    height: 3.75rem;
+    height: 1.5rem;
     width: 7.5rem;
     justify-content: left;
     border-color: $pantallon;
@@ -40,6 +44,7 @@ height: auto;
     max-width: 100%;
     overflow-wrap: break-word;
     white-space: normal;
+    font-size: .5rem;
 }
 .dropdown-button,
 .form-control,

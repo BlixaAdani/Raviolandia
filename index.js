@@ -14,23 +14,6 @@ $('.carousel').carousel({
   interval: 2000
 });
 
-let usuario = "cliente"
-let contrasena = "raviolandia"
-
-function checkName() {
-  let nameInput = document.getElementById("nameInput").value;
-  let expectedName = `${cliente} ${raviolandia}`;
-  let result = document.getElementById("result");
-
-  if (nameInput === expectedName) {
-    result.textContent = "True";
-    result.style.color = "green";
-  } else {
-    result.textContent = "False";
-    result.style.color = "red";
-  }
-}
-
 // CARRITO RESPONSIVE
 
 document.addEventListener('DOMContentLoaded', () => {

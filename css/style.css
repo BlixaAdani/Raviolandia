@@ -11,11 +11,11 @@ header .navbar {
   color: rgb(224, 137, 55);
   display: flex;
   justify-content: space-between;
-  align-items: right;
   flex-direction: column;
 }
 header .navbar .cover-container {
   width: 100%;
+  align-items: right;
 }
 header .navbar .masthead-brand {
   display: inline;
@@ -32,12 +32,10 @@ header .navbar .dropdown #dLabel {
   align-self: right;
   height: 3.75rem;
   width: 7.5rem;
-  justify-content: left;
   border-color: rgb(224, 137, 55);
-  color: rgb(224, 137, 55);
+  color: black;
   background-color: rgba(240, 219, 136, 0.87);
   border-radius: 0.625rem;
-  max-width: 100%;
 }
 header .navbar .dropdown .dropdown-button,
 header .navbar .dropdown .form-control,
@@ -115,7 +113,7 @@ header .navbar .dropdown .btn:hover {
   background-image: url(/assets/DSC_0141\ \(2\)\ copia.jpg);
 }
 .bod .head {
-  background-color: rgba(172, 0, 0, 0.8078431373);
+  background-color: rgba(177, 12, 12, 0.8078431373);
   padding: 1rem;
   border-radius: 12px;
   margin-top: 12px;
@@ -240,7 +238,7 @@ header .navbar .dropdown .btn:hover {
 }
 .bod .footer {
   padding: 1rem;
-  background-color: rgba(172, 0, 0, 0.8078431373);
+  background-color: rgba(177, 12, 12, 0.8078431373);
   text-align: center;
   border-radius: 12px;
 }

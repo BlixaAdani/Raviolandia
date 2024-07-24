@@ -1,7 +1,10 @@
+
+
 .carousel-inner{
-  margin-top: 2.75rem;
+  margin-top: 2rem;
 }
 
+// carrito.html
 .cuerpo {
   background-image: url('https://thumbs.dreamstime.com/b/close-up-pasta-machine-effortlessly-extruding-fresh-noodles-factory-319545266.jpg');
   background-size: cover;
@@ -10,7 +13,7 @@
   height: auto;
 header{
   background-color: #1e579d;
-  height: 5.5rem;
+  height: 2.5rem;
   width: auto;
   display: flex;
   flex-direction: row-reverse;
@@ -22,8 +25,8 @@ header{
     height: 3.75rem;
     width: 7.5rem;
     border-color: $pantallon;
-    color: rgba(0, 0, 0, 0.76);
-    background-color: rgba(199, 35, 49, 0.486);
+    color: rgba(212, 34, 34, 0.445);
+    background-color: rgb(243, 0, 20);
     border-radius: .625rem;
     align-self: right;
 }
@@ -64,7 +67,7 @@ background-color: rgb(90, 64, 204);
   background-color: rgba(169, 209, 192, 0.13);
   padding: 1rem;
   color: $text-color;
-  background-image: url(/assets/DSC_0141\ \(2\)\ copia.jpg);
+  background-image: url(/assets/DSC_0141\ \(2\));
 .head {
   background-color: $highlight-color;
   padding: 1rem;
