@@ -1,11 +1,10 @@
-body {
-  height: 320px;
 @media (max-width: 320px) {
   header{
     height: 30px;
     background-color: $pantallaprin;
+    height: 20px;
     .cover-container{
-      width: 320px !important;
+      width: 20px !important;
     }
 .navbar{
     background-color: $pantallaprin;
@@ -13,13 +12,14 @@ body {
     justify-content:flex-start;
     align-items: flex-start;
     flex-direction: row;
+    height: 20px;
 .masthead-brand{
     display: inline;
     font-style: italic;
     font-weight: lighter;
     align-items: center;
     justify-content: center;
-    font-size: .9rem;
+    font-size: 13px !important;
 }
 .logo{
 width: 1.75rem;
@@ -27,24 +27,20 @@ height: auto;
 margin-left: 2rem;
 }
 .dropdown{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: -43.5rem !important;
     width: 3rem;
     height: 1rem;
 #dLabel{
     align-self: right;
-    height: 1.5rem;
-    width: 7.5rem;
+    height: 1rem !important;
+    width: 2.5rem;
     justify-content: left;
     border-color: $pantallon;
     color: $pantallon;
     background-color: $pantallaboton;
-    word-wrap: break-word;
     border-radius: .625rem;
     max-width: 100%;
-    overflow-wrap: break-word;
-    white-space: normal;
-    font-size: .5rem;
+    font-size: .5rem !important;
 }
 .dropdown-button,
 .form-control,
@@ -53,7 +49,6 @@ margin-left: 2rem;
     width: 100%;
     &:hover{
         display: block;
-}
 }
 }
 }

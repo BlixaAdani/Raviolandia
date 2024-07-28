@@ -6,58 +6,63 @@
 header {
   height: 2.5rem;
   background-color: #fffaa0; }
-  header .navbar {
-    background-color: #fffaa0;
-    color: #c96d17;
-    display: flex;
-    justify-content: left;
-    flex-direction: row; }
-    header .navbar .cover-container {
-      width: 100%;
-      align-self: right;
-      justify-self: right;
-      flex-direction: row; }
-      header .navbar .cover-container .masthead-brand {
-        display: inline;
-        font-style: italic;
-        font-weight: lighter;
-        font-size: 2.5rem;
-        justify-content: right; }
-      header .navbar .cover-container .logo {
-        width: 6.25rem;
-        height: auto; }
-      header .navbar .cover-container .dropdown {
-        align-self: right; }
-      header .navbar .cover-container #dLabel {
-        height: 3.75rem;
-        width: 7.5rem;
-        border-color: #c96d17;
-        color: black;
-        background-color: rgba(240, 219, 136, 0.87);
-        border-radius: .625rem; }
-      header .navbar .cover-container .dropdown-button,
-      header .navbar .cover-container .form-control,
-      header .navbar .cover-container .btn {
-        display: block;
-        width: 100%;
-        margin-left: 50rem; }
-        header .navbar .cover-container .dropdown-button:hover,
-        header .navbar .cover-container .form-control:hover,
-        header .navbar .cover-container .btn:hover {
-          display: block; }
 
-.carousel-inner {
-  margin-top: 2rem; }
+.navbar {
+  background-color: #fffaa0;
+  color: #c96d17;
+  display: flex;
+  justify-content: left;
+  flex-direction: row; }
+
+.cover-container {
+  width: 100%;
+  flex-direction: row; }
+
+.masthead-brand {
+  display: inline;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 2.5rem !important; }
+
+.logo {
+  width: 6.25rem;
+  height: auto; }
+
+.dropdown {
+  display: inline-block; }
+
+#dLabel {
+  height: 3.75rem;
+  width: 7.5rem;
+  font-size: 1rem !important;
+  border-color: #c96d17;
+  color: black;
+  background-color: rgba(240, 219, 136, 0.87);
+  border-radius: .625rem; }
+
+.dropdown-menu {
+  width: 7.5rem; }
+
+.dropdown-button,
+.form-control,
+.btn {
+  display: block;
+  width: 100%;
+  margin-left: 50rem; }
+  .dropdown-button:hover,
+  .form-control:hover,
+  .btn:hover {
+    display: block; }
 
 .cuerpo {
   background-image: url("https://thumbs.dreamstime.com/b/close-up-pasta-machine-effortlessly-extruding-fresh-noodles-factory-319545266.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto; }
+  background-color: #c96d17; }
   .cuerpo header {
     background-color: #1e579d;
-    height: 2.5rem;
+    height: 5.5rem;
     width: auto;
     display: flex;
     flex-direction: row-reverse; }
@@ -69,10 +74,9 @@ header {
         height: 3.75rem;
         width: 7.5rem;
         border-color: #c96d17;
-        color: rgba(212, 34, 34, 0.445);
-        background-color: #f30014;
-        border-radius: .625rem;
-        align-self: right; }
+        color: rgba(0, 0, 0, 0.445);
+        background-color: #1e579d;
+        border-radius: .625rem; }
   .cuerpo .main {
     flex: 1;
     padding: 20px;
@@ -96,9 +100,11 @@ header {
   background-color: rgba(169, 209, 192, 0.13);
   padding: 1rem;
   color: #000000;
-  background-image: url(/assets/DSC_0141\ \(2\)); }
+  background-image: url(/assets/DSC_0141\ \(2\));
+  background-blend-mode: difference; }
   .bod .head {
     background-color: #b10c0cce;
+    height: 5rem;
     padding: 1rem;
     border-radius: 12px;
     margin-top: 12px; }
@@ -218,8 +224,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 1310px;
-    margin-top: 0.125rem; }
+    max-width: 1310px; }
     .text-center .container .row {
       background-color: #c96d17; }
       .text-center .container .row .col-lg-2 {
@@ -243,59 +248,55 @@ header {
 .btn-floating {
   position: relative; }
 
-body {
-  height: 320px; }
-  @media (max-width: 320px) {
-    body header {
-      height: 30px;
-      background-color: #fffaa0; }
-      body header .cover-container {
-        width: 320px !important; }
-      body header .navbar {
-        background-color: #fffaa0;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: row; }
-        body header .navbar .masthead-brand {
-          display: inline;
-          font-style: italic;
-          font-weight: lighter;
-          align-items: center;
-          justify-content: center;
-          font-size: .9rem; }
-        body header .navbar .logo {
-          width: 1.75rem;
-          height: auto;
-          margin-left: 2rem; }
-        body header .navbar .dropdown {
-          margin-left: 5rem;
-          margin-right: 5rem;
-          width: 3rem;
-          height: 1rem; }
-          body header .navbar .dropdown #dLabel {
-            align-self: right;
-            height: 1.5rem;
-            width: 7.5rem;
-            justify-content: left;
-            border-color: #c96d17;
-            color: #c96d17;
-            background-color: rgba(240, 219, 136, 0.87);
-            word-wrap: break-word;
-            border-radius: .625rem;
-            max-width: 100%;
-            overflow-wrap: break-word;
-            white-space: normal;
-            font-size: .5rem; }
-          body header .navbar .dropdown .dropdown-button,
-          body header .navbar .dropdown .form-control,
-          body header .navbar .dropdown .btn {
-            display: block;
-            width: 100%; }
-            body header .navbar .dropdown .dropdown-button:hover,
-            body header .navbar .dropdown .form-control:hover,
-            body header .navbar .dropdown .btn:hover {
-              display: block; } }
+@media (max-width: 320px) {
+  header {
+    height: 30px;
+    background-color: #fffaa0;
+    height: 20px; }
+    header .cover-container {
+      width: 20px !important; }
+    header .navbar {
+      background-color: #fffaa0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      height: 20px; }
+      header .navbar .masthead-brand {
+        display: inline;
+        font-style: italic;
+        font-weight: lighter;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px !important; }
+      header .navbar .logo {
+        width: 1.75rem;
+        height: auto;
+        margin-left: 2rem; }
+      header .navbar .dropdown {
+        margin-left: -43.5rem !important;
+        width: 3rem;
+        height: 1rem; }
+        header .navbar .dropdown #dLabel {
+          align-self: right;
+          height: 1rem !important;
+          width: 2.5rem;
+          justify-content: left;
+          border-color: #c96d17;
+          color: #c96d17;
+          background-color: rgba(240, 219, 136, 0.87);
+          border-radius: .625rem;
+          max-width: 100%;
+          font-size: .5rem !important; }
+        header .navbar .dropdown .dropdown-button,
+        header .navbar .dropdown .form-control,
+        header .navbar .dropdown .btn {
+          display: block;
+          width: 100%; }
+          header .navbar .dropdown .dropdown-button:hover,
+          header .navbar .dropdown .form-control:hover,
+          header .navbar .dropdown .btn:hover {
+            display: block; } }
 
 @media (min-width: 375px) {
   .navbar {

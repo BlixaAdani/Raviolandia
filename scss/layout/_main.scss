@@ -1,8 +1,6 @@
+// index.html
 
 
-.carousel-inner{
-  margin-top: 2rem;
-}
 
 // carrito.html
 .cuerpo {
@@ -10,10 +8,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto;
+  background-color: $pantallon;
 header{
   background-color: #1e579d;
-  height: 2.5rem;
+  height: 5.5rem;
   width: auto;
   display: flex;
   flex-direction: row-reverse;
@@ -25,10 +23,9 @@ header{
     height: 3.75rem;
     width: 7.5rem;
     border-color: $pantallon;
-    color: rgba(212, 34, 34, 0.445);
-    background-color: rgb(243, 0, 20);
+    color: rgba(0, 0, 0, 0.445);
+    background-color: $secondary-color;
     border-radius: .625rem;
-    align-self: right;
 }
 }
 }
@@ -68,8 +65,10 @@ background-color: rgb(90, 64, 204);
   padding: 1rem;
   color: $text-color;
   background-image: url(/assets/DSC_0141\ \(2\));
+  background-blend-mode: difference;
 .head {
   background-color: $highlight-color;
+  height: 5rem;
   padding: 1rem;
   border-radius: 12px;
   margin-top: 12px;
