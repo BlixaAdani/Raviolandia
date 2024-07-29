@@ -1,6 +1,10 @@
 // index.html
-
-
+body{
+  width: 100% !important;
+.inner{
+  margin-top: 2.5rem;
+}
+}
 
 // carrito.html
 .cuerpo {
@@ -14,11 +18,9 @@ header{
   height: 5.5rem;
   width: auto;
   display: flex;
-  flex-direction: row-reverse;
   .header__nav {
     list-style: none;
     display: flex;
-    flex-direction: row-reverse;
   #dLabel{
     height: 3.75rem;
     width: 7.5rem;
