@@ -36,6 +36,8 @@ header {
 
 .dropdown {
   display: inline-block;
+  margin-left: 33rem;
+  margin-top: -0.5rem;
 }
 
 #dLabel {
@@ -49,7 +51,7 @@ header {
 }
 
 .dropdown-menu {
-  width: 5.5rem;
+  width: 7.5rem;
 }
 
 .dropdown-button,
@@ -308,14 +310,17 @@ body .inner {
 }
 
 @media (max-width: 320px) {
-  header {
+  body {
+    width: 20rem;
+  }
+  body header {
     height: 4rem;
     background-color: rgb(255, 250, 160);
   }
-  header .cover-container {
+  body header .cover-container {
     width: 20px !important;
   }
-  header .navbar {
+  body header .navbar {
     background-color: rgb(255, 250, 160);
     display: flex;
     justify-content: flex-start;
@@ -323,25 +328,24 @@ body .inner {
     flex-direction: row;
     height: 20px;
   }
-  header .navbar .masthead-brand {
+  body header .navbar .masthead-brand {
     display: inline;
     font-style: italic;
     font-weight: lighter;
     font-size: 1.5rem !important;
     margin-left: -9rem !important;
   }
-  header .navbar .logo {
+  body header .navbar .logo {
     width: 1.75rem;
     height: auto;
     margin-left: 2rem;
     display: none;
   }
-  header .navbar .dropdown {
-    margin-right: -30rem;
+  body header .navbar .dropdown {
     width: 3rem;
     height: 1rem;
   }
-  header .navbar .dropdown #dLabel {
+  body header .navbar .dropdown #dLabel {
     align-self: right;
     height: 1rem !important;
     width: 2.5rem;
@@ -354,23 +358,23 @@ body .inner {
     font-size: 0.5rem !important;
     margin-top: 0.5rem;
   }
-  header .navbar .dropdown .dropdown-button,
-  header .navbar .dropdown .form-control,
-  header .navbar .dropdown .btn {
+  body header .navbar .dropdown .dropdown-button,
+  body header .navbar .dropdown .form-control,
+  body header .navbar .dropdown .btn {
     display: block;
     width: 100%;
   }
-  header .navbar .dropdown .dropdown-button:hover,
-  header .navbar .dropdown .form-control:hover,
-  header .navbar .dropdown .btn:hover {
+  body header .navbar .dropdown .dropdown-button:hover,
+  body header .navbar .dropdown .form-control:hover,
+  body header .navbar .dropdown .btn:hover {
     display: block;
   }
-  .container {
+  body .container {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-  .inner {
+  body .inner {
     margin-top: -0.5rem;
   }
 }
