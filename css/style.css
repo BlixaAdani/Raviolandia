@@ -4,68 +4,6 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 2.5rem;
-  background-color: rgb(255, 250, 160);
-}
-
-.navbar {
-  background-color: rgb(255, 250, 160);
-  color: rgb(201, 109, 23);
-  display: flex;
-  justify-content: left;
-  flex-direction: row;
-}
-
-.cover-container {
-  width: 100%;
-  flex-direction: row;
-}
-
-.masthead-brand {
-  display: inline;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 2.5rem !important;
-}
-
-.logo {
-  width: 6.25rem;
-  height: auto;
-}
-
-.dropdown {
-  display: inline-block;
-  margin-left: 33rem;
-  margin-top: -0.5rem;
-}
-
-#dLabel {
-  height: 3.75rem;
-  width: 7.5rem;
-  font-size: 1rem !important;
-  border-color: rgb(201, 109, 23);
-  color: black;
-  background-color: rgba(240, 219, 136, 0.87);
-  border-radius: 0.625rem;
-}
-
-.dropdown-menu {
-  width: 7.5rem;
-}
-
-.dropdown-button,
-.form-control,
-.btn {
-  display: block;
-  width: 100%;
-}
-.dropdown-button:hover,
-.form-control:hover,
-.btn:hover {
-  display: block;
-}
-
 body {
   width: 100% !important;
 }
@@ -265,6 +203,68 @@ body .inner {
   margin: 0;
   color: #000000;
   border-radius: 12px;
+}
+
+header {
+  height: 2.5rem;
+  background-color: rgb(255, 250, 160);
+}
+
+.navbar {
+  background-color: rgb(255, 250, 160);
+  color: rgb(201, 109, 23);
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.cover-container {
+  width: 100%;
+  flex-direction: row;
+}
+
+.masthead-brand {
+  display: inline;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 2.5rem !important;
+}
+
+.logo {
+  width: 6.25rem;
+  height: auto;
+}
+
+.dropdown {
+  display: inline-block;
+  margin-left: 33rem;
+  margin-top: -0.5rem;
+}
+
+#dLabel {
+  height: 3.75rem;
+  width: 7.5rem;
+  font-size: 1rem !important;
+  border-color: rgb(201, 109, 23);
+  color: black;
+  background-color: rgba(240, 219, 136, 0.87);
+  border-radius: 0.625rem;
+}
+
+.dropdown-menu {
+  width: 7.5rem;
+}
+
+.dropdown-button,
+.form-control,
+.btn {
+  display: block;
+  width: 100%;
+}
+.dropdown-button:hover,
+.form-control:hover,
+.btn:hover {
+  display: block;
 }
 
 .text-center {

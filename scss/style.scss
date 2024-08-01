@@ -3,9 +3,9 @@
 @import "./utilities/mixins";
 @import "./base/reset";
 @import "./base/typographies";
-@import "./layout/carrito";
-@import "./layout/contacto";
-@import "./layout/initial";
+@import "./layout/_main.scss";
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
 @import "./layout/media-queries";
 @import "./components/bootstrap";
 @import "./components/cards"
