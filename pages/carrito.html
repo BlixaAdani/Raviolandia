@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raviolandia - Your go-to place for delicious homemade pasta">
+    <meta name="keywords" content="Fabrica de pastas, pastas caseras, ravioles, sorrentinos, fideos amasados con amor, harina, comida casera, fabrica especializada en pastas">
+    <meta name="author" content="Naim Francisco Adani Leiva">
+    <meta name="copyright" content="Raviolandia">
+    <meta name="theme-color" content="#ffff99">
+    <meta property="og:title" content="Raviolandia - Fábrica casera de pastas">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://t4.ftcdn.net/jpg/00/72/13/91/360_F_72139134_Wa4qjPASj09fL0vsblzRDoLESF5p55bS.jpg">
+    <meta property="og:url" content="www.raviolandia.com">
+    <meta property="og:type" content="website">
     <title>Raviolandia</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../scss/layout/_carrito.scss">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
-<body id="cuerpo">
-    <div class="container">
-        <header class="header text-white text-center p-3">
-            <h1>Raviolandia</h1>
-            <nav>
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="carrito.html" class="header__nav-link">Carrito</a></li>
-                    <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
-                </ul>
+<body class="cuerpo">
+        <header class="header text-center p-3">
+            <nav class="header__nav">
+                <div class="dropdown">
+                    <button id="dLabel" class="dropdown-button" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">Menú</button>
+                    <div class="dropdown-menu" aria-labelledby="dLabel">
+                      <a class="nav-link active" href="../index.html">Principal</a>
+                      <a class="nav-link" href="#">Pedidos</a>
+                      <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                      <form class="d-flex">
+                        <input class="form-control me-2" id="forma" type="search" placeholder="" aria-label="Search">
+                        <button class="btn danger-secondary btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
             </nav>
         </header>
-
-        <main class="main py-4">
-            <!-- Main content specific to each page (carrito.html or contacto.html) will go here -->
-            <!-- Example content for carrito.html -->
+        <main class="main">
+            <div class="container">
             <div id="product-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col" data-id="1" data-name="Fideos spaghetti" data-price="3500">
                     <div class="card h-100">
@@ -32,47 +48,42 @@
                         <div class="card-body">
                             <h5 class="card-title">Fideos spaghetti</h5>
                             <p class="card-text">3.500AR$</p>
+                            <button id="agregar" class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-id="2" data-name="Canelones" data-price="1800">
+                    <div class="card h-100">
+                        <img src="/assets/DSC_0494 copia.jpg" class="card-img-top" alt="Canelones">
+                        <div class="card-body">
+                            <h5 class="card-title">Canelones</h5>
+                            <p class="card-text">1.800AR$</p>
                             <button class="btn btn-primary add-to-cart">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
-                <!-- More product cards here -->
-            </div>
-        </main>
-
-        <footer class="footer bg-dark text-white text-center p-3">
-            <p class="footer__text">Footer</p>
-        </footer>
-    </div>
-
-    <!-- Cart Modal -->
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul id="cart-items" class="list-group">
-                        <!-- Cart items will be appended here -->
-                    </ul>
-                    <div class="mt-3">
-                        <strong>Total: $<span id="cart-total">0.00</span></strong>
+                <div class="col" data-id="3" data-name="Panzottis" data-price="2500">
+                    <div class="card h-100">
+                        <img src="/assets/DSC_0141 (2) copia.jpg" class="card-img-top" alt="Panzottis">
+                        <div class="card-body">
+                            <h5 class="card-title">Panzottis</h5>
+                            <p class="card-text">2.500AR$</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al carrito</button>
+                        </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id="checkout-button">Checkout</button>
-                </div>
+                <!-- Add more products as needed -->
             </div>
         </div>
+        </main>
+        <footer class="footer text-center p-3 mt-auto">
+            <div class="p-3">
+                © 2024 Copyright:
+                <a class="text-white" href="#">Raviolandia</a>
+            </div>
+        </footer>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/carrito.js"></script>
-    <script src="../index.js"></script>
+    <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
