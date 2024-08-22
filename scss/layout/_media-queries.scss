@@ -78,5 +78,76 @@
 }
 
 @media (max-width: 375px) {
-  
+  body {
+    width: 23.4375rem;
+
+    header {
+      height: 5rem !important;
+      background-color: $pantallaprin;
+
+      .cover-container {
+        width: 20px !important;
+      }
+
+      .navbar {
+        background-color: $pantallaprin;
+        height: 20px;
+
+        .masthead-brand {
+          display: inline;
+          font-style: italic;
+          font-weight: lighter;
+          font-size: 1.5rem !important;
+          margin-left: -9rem !important;
+        }
+
+        .logo {
+          width: 1.75rem;
+          height: auto;
+          margin-left: 2rem;
+          display: none;
+        }
+
+        .dropdown {
+          width: 3rem;
+          height: 1rem;
+
+          #dLabel {
+            align-self: right;
+            height: 1rem !important;
+            width: 2.5rem;
+            justify-content: left;
+            border-color: $pantallon;
+            color: $pantallon;
+            background-color: $pantallaboton;
+            border-radius: .625rem;
+            max-width: 100%;
+            font-size: .5rem !important;
+            margin-top: .5rem;
+          }
+
+          .dropdown-button,
+          .form-control,
+          .btn {
+            display: block;
+            width: 100%;
+
+            &:hover {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .inner {
+      margin-top: -.5rem;
+    }
+  }
 }

@@ -377,5 +377,70 @@ header {
     margin-top: -0.5rem;
   }
 }
+@media (max-width: 375px) {
+  body {
+    width: 23.4375rem;
+  }
+  body header {
+    height: 5rem !important;
+    background-color: rgb(255, 250, 160);
+  }
+  body header .cover-container {
+    width: 20px !important;
+  }
+  body header .navbar {
+    background-color: rgb(255, 250, 160);
+    height: 20px;
+  }
+  body header .navbar .masthead-brand {
+    display: inline;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.5rem !important;
+    margin-left: -9rem !important;
+  }
+  body header .navbar .logo {
+    width: 1.75rem;
+    height: auto;
+    margin-left: 2rem;
+    display: none;
+  }
+  body header .navbar .dropdown {
+    width: 3rem;
+    height: 1rem;
+  }
+  body header .navbar .dropdown #dLabel {
+    align-self: right;
+    height: 1rem !important;
+    width: 2.5rem;
+    justify-content: left;
+    border-color: rgb(201, 109, 23);
+    color: rgb(201, 109, 23);
+    background-color: rgba(240, 219, 136, 0.87);
+    border-radius: 0.625rem;
+    max-width: 100%;
+    font-size: 0.5rem !important;
+    margin-top: 0.5rem;
+  }
+  body header .navbar .dropdown .dropdown-button,
+  body header .navbar .dropdown .form-control,
+  body header .navbar .dropdown .btn {
+    display: block;
+    width: 100%;
+  }
+  body header .navbar .dropdown .dropdown-button:hover,
+  body header .navbar .dropdown .form-control:hover,
+  body header .navbar .dropdown .btn:hover {
+    display: block;
+  }
+  body .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  body .inner {
+    margin-top: -0.5rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
