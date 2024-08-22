@@ -1,175 +1,82 @@
 @media (max-width: 320px) {
-  body{
+  body {
     width: 20rem;
-  header{
-    height: 4rem;
-    background-color: $pantallaprin;
-    .cover-container{
-      width: 20px !important;
-    }
-.navbar{
-    background-color: $pantallaprin;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    height: 20px;
-.masthead-brand{
-    display: inline;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 1.5rem !important;
-    margin-left: -9rem !important;
-}
-.logo{
-width: 1.75rem;
-height: auto;
-margin-left: 2rem;
-display: none;
-}
-.dropdown{
-    width: 3rem;
-    height: 1rem;
-#dLabel{
-    align-self: right;
-    height: 1rem !important;
-    width: 2.5rem;
-    justify-content: left;
-    border-color: $pantallon;
-    color: $pantallon;
-    background-color: $pantallaboton;
-    border-radius: .625rem;
-    max-width: 100%;
-    font-size: .5rem !important;
-    margin-top: .5rem;
-}
-.dropdown-button,
-.form-control,
-.btn {
-    display: block;
-    width: 100%;
-    &:hover{
-        display: block;
-}
-}
-}
-}
-}
 
-.container{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.inner{
-  margin-top: -.5rem;
-}
-}
-}
+    header {
+      height: 4rem;
+      background-color: $pantallaprin;
 
-@media (min-width: 375px) {
-  body{
-    width: 201%;
-  .navbar {
-    padding: 20px;
+      .cover-container {
+        width: 20px !important;
+      }
 
-    .masthead-brand {
-      font-size: 1.4em;
+      .navbar {
+        background-color: $pantallaprin;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        height: 20px;
+
+        .masthead-brand {
+          display: inline;
+          font-style: italic;
+          font-weight: lighter;
+          font-size: 1.5rem !important;
+          margin-left: -9rem !important;
+        }
+
+        .logo {
+          width: 1.75rem;
+          height: auto;
+          margin-left: 2rem;
+          display: none;
+        }
+
+        .dropdown {
+          width: 3rem;
+          height: 1rem;
+
+          #dLabel {
+            align-self: right;
+            height: 1rem !important;
+            width: 2.5rem;
+            justify-content: left;
+            border-color: $pantallon;
+            color: $pantallon;
+            background-color: $pantallaboton;
+            border-radius: .625rem;
+            max-width: 100%;
+            font-size: .5rem !important;
+            margin-top: .5rem;
+          }
+
+          .dropdown-button,
+          .form-control,
+          .btn {
+            display: block;
+            width: 100%;
+
+            &:hover {
+              display: block;
+            }
+          }
+        }
+      }
     }
 
-    .logo {
-      width: 60px;
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
     }
 
-    #dLabel {
-      max-width: 100%;
-      margin-left: 15rem;
-    }
-  }
-}
-.inner{
-  margin-top: 3rem;
-}
-}
-
-@media (min-width: 425px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-
-    .masthead-brand {
-      font-size: 1.5em;
-      margin-bottom: 0;
-    }
-
-    .logo {
-      width: 6rem;
-      height: 3rem;
-    }
-
-    .dropdown-button {
-      width: auto;
-    }
-
-    .dropdown-menu {
-      width: auto;
-    }
-
-    .form-control {
-      width: auto;
-      margin-bottom: 0;
-    }
-
-    .btn {
-      width: auto;
-    }
-
-    #dLabel {
-      max-width: 100%;
-      overflow-wrap: break-word;
-      white-space: normal;
+    .inner {
+      margin-top: -.5rem;
     }
   }
 }
 
-@media (max-width: 678px) {
-  .container {
-    display: flex;
-    grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "banner"
-      "left-aside"
-      "main"
-      "right-aside"
-      "low-content"
-      "footer";
-  }
-.logo {
-  width: 20px;
-  height: 20px;
-  margin-left: 30px;
-}
-
-#dLabel {
-  max-width: 100%;
-  overflow-wrap: break-word;
-  margin-right: 300px;
-}
-}
-
-@media (min-width: 425px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-
-    .masthead-brand {
-      font-size: 1
-    }
-  }
+@media (max-width: 375px) {
+  
 }

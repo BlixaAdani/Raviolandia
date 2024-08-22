@@ -237,8 +237,7 @@ header {
 
 .dropdown {
   display: inline-block;
-  margin-left: 33rem;
-  margin-top: -0.5rem;
+  margin-top: 0.2 0.5rem;
 }
 
 #dLabel {
@@ -376,90 +375,6 @@ header {
   }
   body .inner {
     margin-top: -0.5rem;
-  }
-}
-@media (min-width: 375px) {
-  body {
-    width: 201%;
-  }
-  body .navbar {
-    padding: 20px;
-  }
-  body .navbar .masthead-brand {
-    font-size: 1.4em;
-  }
-  body .navbar .logo {
-    width: 60px;
-  }
-  body .navbar #dLabel {
-    max-width: 100%;
-    margin-left: 15rem;
-  }
-  .inner {
-    margin-top: 3rem;
-  }
-}
-@media (min-width: 425px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-  }
-  .navbar .masthead-brand {
-    font-size: 1.5em;
-    margin-bottom: 0;
-  }
-  .navbar .logo {
-    width: 6rem;
-    height: 3rem;
-  }
-  .navbar .dropdown-button {
-    width: auto;
-  }
-  .navbar .dropdown-menu {
-    width: auto;
-  }
-  .navbar .form-control {
-    width: auto;
-    margin-bottom: 0;
-  }
-  .navbar .btn {
-    width: auto;
-  }
-  .navbar #dLabel {
-    max-width: 100%;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-}
-@media (max-width: 678px) {
-  .container {
-    display: flex;
-    grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "banner" "left-aside" "main" "right-aside" "low-content" "footer";
-  }
-  .logo {
-    width: 20px;
-    height: 20px;
-    margin-left: 30px;
-  }
-  #dLabel {
-    max-width: 100%;
-    overflow-wrap: break-word;
-    margin-right: 300px;
-  }
-}
-@media (min-width: 425px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-  }
-  .navbar .masthead-brand {
-    font-size: 1;
   }
 }
 
