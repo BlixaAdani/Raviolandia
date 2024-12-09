@@ -5,145 +5,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Raviolandia - Deliciosas pastas caseras">
-  <meta name="keywords"
-    content="Fabrica de pastas, pastas caseras, ravioles, sorrentinos, fideos amasados con amor, harina, comida casera, fabrica especializada en pastas">
+  <meta name="keywords" content="Fabrica de pastas, pastas caseras, ravioles, sorrentinos, fideos amasados con amor, harina, comida casera, fabrica especializada en pastas">
   <meta name="author" content="Naim Francisco Adani Leiva">
   <meta name="copyright" content="Raviolandia">
   <meta name="theme-color" content="#ffff99">
   <meta property="og:title" content="Raviolandia - Fábrica casera de pastas">
   <meta property="og:description" content="Pastas hechas con amor, desde nuestro local a tu mesa">
-  <meta property="og:image"
-    content="https://t4.ftcdn.net/jpg/00/72/13/91/360_F_72139134_Wa4qjPASj09fL0vsblzRDoLESF5p55bS.jpg">
+  <meta property="og:image" content="https://t4.ftcdn.net/jpg/00/72/13/91/360_F_72139134_Wa4qjPASj09fL0vsblzRDoLESF5p55bS.jpg">
   <meta property="og:url" content="www.raviolandia.com">
   <meta property="og:type" content="website">
   <title>Raviolandia</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+  <link rel="icon" href="./assets/favicon.ico">
 </head>
 
 <body>
-  <header class="masthead mb-auto">
-    <nav class="navbar nav-masthead flex-row">
-      <div class="cover-container d-flex h-100 mx-auto">
-        <h3 class="masthead-brand">RAVIOLANDIA</h3>
-        <img class="logo" src="./assets/ravioli.png" alt="Image of a plate of ravioli">
-        <div class="dropdown">
-          <button id="dLabel" class="dropdown-button" type="button" data-bs-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Menú</button>
-          <div class="dropdown-menu" aria-labelledby="dLabel">
-            <a class="nav-link active" href="#">Principal</a>
-            <a class="nav-link" href="https://www.pedidosya.com.ar/restaurantes/quilmes/raviolandia-quilmes-menu">PedidosYa</a>
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            <form class="d-flex">
-              <input class="form-control me-2" id="forma" type="search" placeholder="" aria-label="Search">
-              <button class="btn danger-secondary btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
+  <header class="mb-auto text-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/ravioli.png" alt="Raviolandia Logo" width="50">
+          <span class="fw-bold">RAVIOLANDIA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.pedidosya.com.ar/restaurantes/quilmes/raviolandia-quilmes-menu">PedidosYa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-3">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
         </div>
       </div>
     </nav>
   </header>
-  <main role="main" class="inner cover">
+
+  <main class="mt-1">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-      </ol>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a class="a" href="./pages/carrito.html">
-            <img class="d-block w-100" src="./assets/DSC_0444.jpg" alt="First slide">
+          <a href="./pages/carrito.html">
+            <img src="./assets/DSC_0444.jpg" class="d-block w-100" alt="Pasta dish 1">
           </a>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/DSC_0510.jpg" alt="Second slide">
+          <img src="./assets/DSC_0510.jpg" class="d-block w-100" alt="Pasta dish 2">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/DSC_0488.jpg" alt="Third slide">
+          <img src="./assets/DSC_0488.jpg" class="d-block w-100" alt="Pasta dish 3">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </main>
-  <footer class="text-center text-white">
-    <div class="container">
-      <section class="bg-tertiary">
-        <div class="row">
-          <div class="col-lg-2 col-md-12">
-            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="dark">
-              <img src="./assets/DSC_0519.jpg" class="w-100"/>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-12">
-            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-              <img src="./assets/DSC_0102.jpg" class="w-100" />
-              </div>
-          </div>
-          <div class="col-lg-2 col-md-12">
-            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-              <img src="./assets/DSC_0077.jpg" class="w-100" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-12">
-            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-              <img src="./assets/DSC_0004.jpg" class="w-100" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-12">
-            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-              <img src="./assets/DSC_0030.jpg" class="w-100" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-12">
-            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-              <img src="./assets/DSC_0119.jpg" class="w-100" />
-            </div>
-          </div>
+
+  <footer class="bg-light">
+    <div class="container py-4">
+      <div class="row text-center text-dark">
+        <div class="col-md-4 mb-3">
+          <img src="./assets/DSC_0519.jpg" class="img-fluid rounded" alt="Image of pasta preparation">
         </div>
-      </section>
-    </div>
-    <div class="container p-3 pb-0">
-      <section class="mb-3 d-flex justify-content-center align-items-center">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1 d-flex align-items-center" role="button" href="https://www.facebook.com/p/Raviolandia-Quilmes-100063698257078/">
-          <i class="fab fa-facebook-f"></i>
-          <img src="./assets/facebook.png" alt="Facebook" style="width: 20px; height: 20px; margin-left: 5px;">
+        <div class="col-md-4 mb-3">
+          <img src="./assets/DSC_0102.jpg" class="img-fluid rounded" alt="Image of fresh ravioli">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="./assets/DSC_0077.jpg" class="img-fluid rounded" alt="Image of pasta dish">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <a class="btn btn-outline-light mx-2" href="https://www.facebook.com/p/Raviolandia-Quilmes-100063698257078/">
+          <i class="fab fa-facebook-f"></i> Facebook
         </a>
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1 d-flex align-items-center" role="button" href="https://www.instagram.com/raviolandia_quilmes/?hl=en">
-          <i class="fab fa-instagram-f"></i>
-          <img src="./assets/instagram.png" alt="Instagram" style="width: 20px; height: 20px; margin-left: 5px;">
+        <a class="btn btn-outline-light mx-2" href="https://www.instagram.com/raviolandia_quilmes/?hl=en">
+          <i class="fab fa-instagram"></i> Instagram
         </a>
-        <!-- WhatsApp -->
-        <a class="btn btn-outline-light btn-floating m-1 d-flex align-items-center" role="button" href="https://wa.me/5491160397216?text=Hola,%20I%20quisiera%20hacer%20un%20pedido%20o%20consultarles!">
-          <i class="fab fa-whatsapp-f"></i>
-          <img src="./assets/whatsapp.png" alt="WhatsApp" style="width: 20px; height: 20px; margin-left: 5px;">
+        <a class="btn btn-outline-light mx-2" href="https://wa.me/5491160397216?text=Hola,%20I%20quisiera%20hacer%20un%20pedido%20o%20consultarles!">
+          <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
-    </div>
-    <div class="text-center p-3">
-      © 2024 Copyright:
-      <a class="text-white" href="#">Raviolandia</a>
+      </div>
+      <p class="text-center text-dark mt-3">&copy; 2024 Raviolandia. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <script src="./index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
