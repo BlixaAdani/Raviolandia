@@ -19,19 +19,36 @@
 </head>
 
 <body>
-    <header>
-        <nav class="header__nav">
-            <h3 class="header__title">Raviolandia</h3>
-            <div class="dropdown">
-                <button id="dLabel" class="dropdown-button" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</button>
-                <div class="dropdown-menu" aria-labelledby="dLabel">
-                    <a class="nav-link" href="../index.html">Principal</a>
-                    <a class="nav-link" href="../pages/carrito.html">Pedidos</a>
-                    <a class="nav-link active" href="#">Contacto</a>
-                </div>
+    <header class="mb-auto text-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="/assets/ravioli.png" alt="Raviolandia Logo" width="50">
+              <span class="fw-bold">RAVIOLANDIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.pedidosya.com.ar/restaurantes/quilmes/raviolandia-quilmes-menu">PedidosYa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex ms-3">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+              </form>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
 
     <main>
         <section class="contact-section">
