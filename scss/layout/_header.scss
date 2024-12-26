@@ -1,59 +1,9 @@
-header {
-    height: 3rem;
-    background-color: $pantallaprin;
-  }
-  
-  .navbar {
-    background-color: $pantallaprin;
-    color: $pantallon;
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-  }
-  
-  .cover-container {
-    width: 100%;
-    flex-direction: row;
-  }
-  
-  .masthead-brand {
-    display: inline;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 2.5rem !important;
-  }
-  
-  .logo {
-    width: 6.25rem;
-    height: auto;
-  }
-  
-  .dropdown {
-    display: inline-block;
-    margin-top: .2.5rem;
-  }
-  
-  #dLabel {
-    height: 3.75rem;
-    width: 7.5rem;
-    font-size: 1rem !important;
-    border-color: $pantallon;
-    color: black;
-    background-color: $pantallaboton;
-    border-radius: .625rem;
-  }
-  
-  .dropdown-menu {
-    width: 7.5rem;
-    
-  }
-  
-  .dropdown-button,
-  .form-control,
-  .btn {
-    display: block;
-    width: 100%;
-    &:hover {
-      display: block;
-  }
+  .mb-auto {
+  background-color: $pantallaprin;
+
+  .navbar-brand {
+      font-style: italic;
+      font-weight: lighter;
+      font-size: 1.5rem;
+    }
 }

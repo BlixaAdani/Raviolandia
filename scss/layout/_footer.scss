@@ -1,8 +1,8 @@
-.text-center{
-    background-color: $pantallon;
+.bg-light{
+    background-color: $pantallaprin;
     width: 100%;
 .container {
-  background-color: $pantallon;
+  background-color: $pantallaprin;
   color: $pantallon;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
     flex-direction: column;
     max-width: 1310px;
     .row{
-      background-color: $pantallon;
+      background-color: $pantallaprin;
     .col-lg-2{
       background-color: $pantallon;
     }

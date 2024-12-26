@@ -3,17 +3,17 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  width: 100% !important; }
-  body .inner {
-    margin-top: 2.5rem; }
+.mt-1 {
+  width: 100%; }
+  .mt-1 .carousel-inner {
+    margin-top: 0; }
 
 .cuerpo {
   background-image: url("https://thumbs.dreamstime.com/b/close-up-pasta-machine-effortlessly-extruding-fresh-noodles-factory-319545266.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #f5f4f4; }
+  background-color: #D8D7D9; }
   .cuerpo header {
     background-color: #1e579d;
     height: 5.5rem;
@@ -25,7 +25,7 @@ body {
       .cuerpo header .header__nav #dLabel {
         height: 3.75rem;
         width: 7.5rem;
-        border-color: #f5f4f4;
+        border-color: #D8D7D9;
         color: rgba(0, 0, 0, 0.445);
         background-color: #1e579d;
         border-radius: .625rem; }
@@ -70,7 +70,7 @@ body {
         font-style: italic;
         font-weight: lighter; }
       .bod .head .header__nav .dropdown #dLabel {
-        border-color: #f5f4f4;
+        border-color: #D8D7D9;
         color: rgba(0, 0, 0, 0.76);
         background-color: rgba(94, 15, 22, 0.486);
         border-radius: .625rem;
@@ -166,76 +166,32 @@ body {
       color: #000000;
       border-radius: 12px; }
 
-header {
-  height: 3rem;
-  background-color: #fffaa0; }
+.mb-auto {
+  background-color: #D9B4A7; }
+  .mb-auto .navbar-brand {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.5rem; }
 
-.navbar {
-  background-color: #fffaa0;
-  color: #f5f4f4;
-  display: flex;
-  justify-content: left;
-  flex-direction: row; }
-
-.cover-container {
-  width: 100%;
-  flex-direction: row; }
-
-.masthead-brand {
-  display: inline;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 2.5rem !important; }
-
-.logo {
-  width: 6.25rem;
-  height: auto; }
-
-.dropdown {
-  display: inline-block;
-  margin-top: 0.2 0.5rem; }
-
-#dLabel {
-  height: 3.75rem;
-  width: 7.5rem;
-  font-size: 1rem !important;
-  border-color: #f5f4f4;
-  color: black;
-  background-color: rgba(240, 219, 136, 0.87);
-  border-radius: .625rem; }
-
-.dropdown-menu {
-  width: 7.5rem; }
-
-.dropdown-button,
-.form-control,
-.btn {
-  display: block;
+.bg-light {
+  background-color: #D9B4A7;
   width: 100%; }
-  .dropdown-button:hover,
-  .form-control:hover,
-  .btn:hover {
-    display: block; }
-
-.text-center {
-  background-color: #f5f4f4;
-  width: 100%; }
-  .text-center .container {
-    background-color: #f5f4f4;
-    color: #f5f4f4;
+  .bg-light .container {
+    background-color: #D9B4A7;
+    color: #D8D7D9;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 1310px; }
-    .text-center .container .row {
-      background-color: #f5f4f4; }
-      .text-center .container .row .col-lg-2 {
-        background-color: #f5f4f4; }
+    .bg-light .container .row {
+      background-color: #D9B4A7; }
+      .bg-light .container .row .col-lg-2 {
+        background-color: #D8D7D9; }
 
 .social-icons {
   display: none;
-  background-color: #f5f4f4;
+  background-color: #D8D7D9;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px #fd8f00; }
@@ -256,11 +212,11 @@ header {
     width: 20rem; }
     body header {
       height: 4rem;
-      background-color: #fffaa0; }
+      background-color: #D9B4A7; }
       body header .cover-container {
         width: 20px !important; }
       body header .navbar {
-        background-color: #fffaa0;
+        background-color: #D9B4A7;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -285,8 +241,8 @@ header {
             height: 1rem !important;
             width: 2.5rem;
             justify-content: left;
-            border-color: #f5f4f4;
-            color: #f5f4f4;
+            border-color: #D8D7D9;
+            color: #D8D7D9;
             background-color: rgba(240, 219, 136, 0.87);
             border-radius: .625rem;
             max-width: 100%;
@@ -313,11 +269,11 @@ header {
     width: 23.4375rem; }
     body header {
       height: 5rem !important;
-      background-color: #fffaa0; }
+      background-color: #D9B4A7; }
       body header .cover-container {
         width: 20px !important; }
       body header .navbar {
-        background-color: #fffaa0;
+        background-color: #D9B4A7;
         height: 20px; }
         body header .navbar .masthead-brand {
           display: inline;
@@ -338,8 +294,8 @@ header {
             height: 1rem !important;
             width: 2.5rem;
             justify-content: left;
-            border-color: #f5f4f4;
-            color: #f5f4f4;
+            border-color: #D8D7D9;
+            color: #D8D7D9;
             background-color: rgba(240, 219, 136, 0.87);
             border-radius: .625rem;
             max-width: 100%;
