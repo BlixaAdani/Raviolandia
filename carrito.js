@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function sendOrderToWhatsApp() {
         const phoneNumber = "5491160397216";
-        let message = "Hola, me gustaría realizar el siguiente pedido:%0A%0A";
+        let message = "Hola, me gustaría realizar el siguiente pedido:";
 
         cart.forEach(product => {
-            message += `- ${product.name}: x ${product.quantity} = $${(product.quantity).toFixed(2)}`;
+            message += `- ${product.name}: x ${product.quantity}.toFixed(2)}`;
         });
 
         const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
