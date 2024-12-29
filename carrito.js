@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let message = "Hola, me gustaría realizar el siguiente pedido:%0A%0A";
 
         cart.forEach(product => {
-            message += `- ${product.name}: $${product.price.toFixed(2)} x ${product.quantity} = $${(product.price * product.quantity).toFixed(2)}%0A`;
+            message += `- ${product.name}: x ${product.quantity} = $${(product.quantity).toFixed(2)}`;
         });
 
         const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-        message += `%0ATotal: $${total.toFixed(2)}%0A%0A¡Gracias!`;
+        message += `Total: $${total.toFixed(2)}, ¡Gracias!`;
 
         console.log(message); // Debugging: Check message content
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
