@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let message = "Hola, me gustaría realizar el siguiente pedido:";
 
         cart.forEach(product => {
-            message += `- ${product.name}: x ${product.quantity}.toFixed(2)}`;
+            message += `- ${product.name}: x ${product.quantity.toFixed(2)}`;
         });
 
         const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
