@@ -8,45 +8,34 @@
   .mt-0 .carousel-inner {
     margin-top: 0; }
 
-.cuerpo {
-  background-image: url("https://thumbs.dreamstime.com/b/close-up-pasta-machine-effortlessly-extruding-fresh-noodles-factory-319545266.jpg");
+.main {
+  background-image: url("/assets/IMG-20240614-WA0121.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #D8D7D9; }
-  .cuerpo header {
-    background-color: #1e579d;
-    height: 5.5rem;
-    width: auto;
-    display: flex; }
-    .cuerpo header .header__nav {
-      list-style: none;
-      display: flex; }
-      .cuerpo header .header__nav #dLabel {
-        height: 3.75rem;
-        width: 7.5rem;
-        border-color: #D8D7D9;
-        color: rgba(0, 0, 0, 0.445);
-        background-color: #1e579d;
-        border-radius: .625rem; }
-  .cuerpo .main {
-    flex: 1;
-    padding: 20px;
+  .main .container {
     display: flex;
     flex-direction: column; }
-    .cuerpo .main .container {
-      display: flex;
-      flex-direction: column; }
-      .cuerpo .main .container #product-list {
-        width: 100%;
-        height: 20%; }
-        .cuerpo .main .container #product-list .card img {
-          height: 600px;
-          object-fit: cover; }
-          .cuerpo .main .container #product-list .card img .col {
-            height: 120px; }
-  .cuerpo .footer {
-    background-color: #5a40cc; }
+    .main .container #product-list {
+      width: 100%;
+      height: 20%; }
+      .main .container #product-list .card img {
+        height: 600px;
+        object-fit: cover; }
+        .main .container #product-list .card img .col {
+          height: 120px; }
+  .main .btn {
+    align-items: center;
+    width: 100%;
+    height: 3rem; }
+  .main .footer {
+    padding: 1rem;
+    background-color: #2566aadc;
+    text-align: center; }
+    .main .footer .footer__text {
+      margin: 0;
+      color: #000000; }
 
 .bod {
   background-color: rgba(169, 209, 192, 0.13);
@@ -76,7 +65,7 @@
         border-radius: .625rem;
         align-self: right; }
       .bod .head .header__nav .dropdown .dropdown-button {
-        background-color: #000000;
+        background-color: #2566aadc;
         color: black;
         border: none;
         padding: 0.5rem 1rem;
@@ -85,12 +74,12 @@
           background-color: #1e579d; }
     .bod .head .dropdown-menu {
       background-color: white;
-      border: 1px solid #000000; }
+      border: 1px solid #2566aadc; }
       .bod .head .dropdown-menu .nav-link {
         color: #000000;
         padding: 0.5rem 1rem; }
         .bod .head .dropdown-menu .nav-link:hover {
-          background-color: #000000;
+          background-color: #2566aadc;
           color: white; }
         .bod .head .dropdown-menu .nav-link.active {
           background-color: #1e579d;
@@ -101,10 +90,10 @@
       .bod .head .d-flex .form-control {
         margin-right: 0.5rem; }
       .bod .head .d-flex .btn-outline-success {
-        border-color: #000000;
-        color: #000000; }
+        border-color: #2566aadc;
+        color: #2566aadc; }
         .bod .head .d-flex .btn-outline-success:hover {
-          background-color: #000000;
+          background-color: #2566aadc;
           color: white; }
   .bod .contact-section,
   .bod .contact-info {
@@ -117,7 +106,7 @@
     .bod .contact-section__title,
     .bod .contact-info__title {
       margin-bottom: 1rem;
-      color: #000000;
+      color: #2566aadc;
       font-size: 1.5rem;
       font-weight: bold; }
     .bod .contact-section__label,
@@ -136,7 +125,7 @@
       border-radius: 5px; }
     .bod .contact-section__button,
     .bod .contact-info__button {
-      background-color: #000000;
+      background-color: #2566aadc;
       color: white;
       border: none;
       padding: 0.75rem 1.5rem;
@@ -150,7 +139,7 @@
       resize: vertical; }
   .bod .contact-info__title {
     margin-bottom: 1rem;
-    color: #000000;
+    color: #2566aadc;
     font-size: 1.5rem;
     font-weight: bold; }
   .bod .contact-info__text {
