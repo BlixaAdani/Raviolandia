@@ -1,153 +1,114 @@
+/* General Reset for Small Devices */
 @media (max-width: 320px) {
-  body {
-    width: 20rem;
-
+  header {
     header {
-      height: 4rem;
-      background-color: $pantallaprin;
-
-      .cover-container {
-        width: 20px !important;
-      }
-
+      height: 5rem;
+  
       .navbar {
-        background-color: $pantallaprin;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: row;
-        height: 20px;
-
-        .masthead-brand {
-          display: inline;
-          font-style: italic;
-          font-weight: lighter;
-          font-size: 1.5rem !important;
-          margin-left: -9rem !important;
+        .navbar-brand {
+          font-size: 1.5rem;
         }
-
-        .logo {
-          width: 1.75rem;
-          height: auto;
-          margin-left: 2rem;
-          display: none;
+  
+        .navbar-nav {
+          flex-direction: column;
+          width: 100%;
+          text-align: left;
         }
-
-        .dropdown {
-          width: 3rem;
-          height: 1rem;
-
-          #dLabel {
-            align-self: right;
-            height: 1rem !important;
-            width: 2.5rem;
-            justify-content: left;
-            border-color: $pantallon;
-            color: $pantallon;
-            background-color: $pantallaboton;
-            border-radius: .625rem;
-            max-width: 100%;
-            font-size: .5rem !important;
-            margin-top: .5rem;
-          }
-
-          .dropdown-button,
-          .form-control,
-          .btn {
-            display: block;
-            width: 100%;
-
-            &:hover {
-              display: block;
-            }
-          }
+  
+        .nav-link {
+          padding: 0.5rem 0;
         }
       }
     }
-
-    .container {
+  
+    .dropdown-menu {
       width: 100%;
-      display: flex;
-      flex-direction: row;
+      position: static;
     }
-
-    .inner {
-      margin-top: -.5rem;
+  
+    footer {
+      .btn {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+      }
     }
   }
 }
 
+/* Screens up to 375px */
 @media (max-width: 375px) {
-  body {
-    width: 23.4375rem;
+  header {
+    height: 5rem;
 
-    header {
-      height: 5rem !important;
-      background-color: $pantallaprin;
-
-      .cover-container {
-        width: 20px !important;
+    .navbar {
+      .navbar-brand {
+        font-size: 1.5rem;
       }
 
-      .navbar {
-        background-color: $pantallaprin;
-        height: 20px;
+      .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+      }
 
-        .masthead-brand {
-          display: inline;
-          font-style: italic;
-          font-weight: lighter;
-          font-size: 1.5rem !important;
-          margin-left: -9rem !important;
-        }
-
-        .logo {
-          width: 1.75rem;
-          height: auto;
-          margin-left: 2rem;
-          display: none;
-        }
-
-        .dropdown {
-          width: 3rem;
-          height: 1rem;
-
-          #dLabel {
-            align-self: right;
-            height: 1rem !important;
-            width: 2.5rem;
-            justify-content: left;
-            border-color: $pantallon;
-            color: $pantallon;
-            background-color: $pantallaboton;
-            border-radius: .625rem;
-            max-width: 100%;
-            font-size: .5rem !important;
-            margin-top: .5rem;
-          }
-
-          .dropdown-button,
-          .form-control,
-          .btn {
-            display: block;
-            width: 100%;
-
-            &:hover {
-              display: block;
-            }
-          }
-        }
+      .nav-link {
+        padding: 0.5rem 0;
       }
     }
+  }
 
-    .container {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-    }
+  .dropdown-menu {
+    width: 100%;
+    position: static;
+  }
 
-    .inner {
-      margin-top: -.5rem;
+  footer {
+    .btn {
+      font-size: 0.75rem;
+      padding: 0.5rem;
     }
+  }
+
+  .d-flex {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Default Styles for Larger Screens */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    align-items: stretch;
   }
 }
